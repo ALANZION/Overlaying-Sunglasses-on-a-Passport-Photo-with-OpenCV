@@ -1,5 +1,6 @@
 # Overlaying Sunglasses on a Passport Photo with OpenCV
 ## PROGRAM
+``
 ### Import libraries
 import cv2
 import numpy as np
@@ -11,7 +12,6 @@ faceImage.shape
 ### resized_faceImage.shape
 faceImage.shape
 ### Load the Sunglass image with Alpha channel
-### (http://pluspng.com/sunglass-png-1104.html)
 glassPNG = cv2.imread('sunglass-img.png',-1)
 plt.imshow(glassPNG[:,:,::-1]);plt.title("glassPNG")
 ### Resize the image to fit over the eye region
@@ -66,6 +66,7 @@ faceWithGlassesArithmetic[100:140,70:220]=eyeRoiFinal
 plt.figure(figsize=[20,20]);
 plt.subplot(121);plt.imshow(faceImage[:,:,::-1]); plt.title("Original Image");
 plt.subplot(122);plt.imshow(faceWithGlassesArithmetic[:,:,::-1]);plt.title("With Sunglasses");
+``
 ## OUTPUT
 ### FACE IMAGE:
 <img width="326" height="396" alt="image" src="https://github.com/user-attachments/assets/9d51d9a5-8a46-41b0-8d29-576b27a97e58" />
